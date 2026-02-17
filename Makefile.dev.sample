@@ -1,0 +1,8 @@
+
+run_dev:
+	env CRAWLER_USER_AGENT_STRING="Mozilla/5.0 (compatible; StatusMachineBot/1.0; +http://www.statusmachine.com/crawler)" \
+		AWS_ACCESS_KEY_ID="[...........]" AWS_SECRET_ACCESS_KEY="[...........]" AWS_REGION="us-east-1" \
+	 	DATABASE_URL='postgres://postgres:pwd@localhost:5433/statusmachine-rails?sslmode=disable' \
+		CRAWL_TIMEOUT_MINUTES=10 LINKSCRAWLER_TMP_DIR="/tmp" \
+		./build/main
+
