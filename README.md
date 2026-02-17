@@ -5,7 +5,7 @@ Links crawler for Status Machine
 
     make build
 
-It uses GO15VENDOREXPERIMENT=1 behind the scenes, so we can use the vendored
+It uses GO15VENDOREXPERIMENT=1 , so we can use the vendored
 versions of the libraries we use. This makes our builds stable, and not subject
 to breakage if a library updates in a non-backward-compatible way.
 
